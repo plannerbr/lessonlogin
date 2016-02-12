@@ -12,4 +12,6 @@ __Requirements__
 * E-mail should have validation on client too;
 * The user should be able to see his name on administrative area;
 * The user should be able to logout;
-*
+
+__Wireframe login__
+![logo](https://raw.githubusercontent.com/plannerbr/lessonlogin/master/Wireframe-login.png)
