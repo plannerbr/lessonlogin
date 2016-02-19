@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+*{margin:0; padding:0;}
+
+header {
+	text-align: center;
+}
+
+body {
+    font-family: Arial, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+/* Caixa Centro */
+#div-centro {
+	margin: 100px auto;
+	width: 800px;
+	height: 350px;
+	border: #646464 1px solid;
+	border-radius: 10px;
+}
+
+/* Caixa Esquerda */
+#div-esquerda {
+	position:relative;
+	width: 340px;
+	height: 280px;
+    padding: 10px;
+    padding-top: 20px;
+    margin: 20px;
+	background-color: #EFEFEF;
+	float: left;
+}
+
+/* Linha entre as caixas */
+#div-meio {
+    position: relative;
+    width: 1px;
+    height: 310px;
+    margin: 20px;
+    margin-left: 0px;
+    background-color: black;
+    float: left;
+}
+
+/*Caixa Direita*/
+#div-direita {
+	position:relative;
+	width: 340px;
+	height: 280px;
+    padding: 10px;
+    padding-top: 20px;
+    margin: 20px;
+    margin-left: -1px;
+	background-color: #EFEFEF;
+	float: left;
+}
+
+/* Edição da letra das div's */
+
+.letra {
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+/* Edição do botão Criar (div-esquerda) */
+#botao-criar {
+    font-weight: bolder;
+    width: 250px;
+    height: 50px;
+    margin-left: 45px;
+    margin-top: 80px;
+    border: black 1px solid;
+    border-radius: 8px;
+    background-color: white;
+}
+
+#botao-criar:hover {
+    color: white;
+    background-color: black;
+    transition: .1s;
+}
+
+/* Edição do Formulario de LogIn */
+.formulario {
+    margin-top: 20px;
+}
+
+/* Edição das caixas de texto do formulario */
+.caixa {
+    padding: 2px;
+    border: #646464 1px solid;
+}
+
+/* Edição da caixa Usuario */
+.caixa-usuario {
+    margin-left: 30px;
+}
+
+/* Edição da caixa Senha */
+.caixa-senha {
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+
+/* Edição checkbox */
+.caixa-checkbox {
+    margin-left: 70px;
+}
+
+/* Edição botão de Login */
+#botao-login{
+    font-weight: bolder;
+    margin: 10px;
+    margin-left: 70px;
+    padding: 5px;
+    width: 70px;
+    background-color: white;
+    border: black 1px solid;
+    border-radius: 5px;
+}
+
+#botao-login:hover {
+    color: white;
+    background-color: black;
+    transition: .1s;
+}
+
+/* Link forgot senha/email */
+.link-forgot {
+    margin-top: 10px;
+    font-size: 12px;
+    color: black;
+    text-decoration: none;
+}
+
+.link-forgot:hover {
+    text-decoration: underline;
+}

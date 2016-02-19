@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Sistema Login - William Alves</title>
+		<link href="css/estilo.css" rel="stylesheet">
+	</head>
+	<body>
+		<div id="div-centro">
+		    <!-- Caixa Esquerda -->
+			<div id="div-esquerda">
+			    <p><b>New Visitors</b></p>
+			    <p class="letra">Creating a new account is free and instant.</p>
+
+			    <input id="botao-criar" type="submit" value="Create an Account" name="Create">
+			</div>
+           <!-- Linha entre as duas caixas -->
+            <div id="div-meio"><hr></div>
+            <!-- Caixa Direita -->
+		    <div id="div-direita">
+		        <p><b>Resturning Visitors</b></p>
+			    <p class="letra">Login using the email address and password you selected on your first visit.</p>
+
+                <!-- Formulario de login -->
+			    <p class="formulario">
+                    <form action="" method="post" title="LogIn">
+                        <b class="letra">Email</b> <input class="caixa caixa-usuario" type="text" name="user"><br>
+                        <b class="letra">Password</b> <input class="caixa caixa-senha" type="password" name="password"><br>
+                        <!-- Inicio configuração checkbox -->
+                        <p class="letra">
+                            <input class="caixa-checkbox" type="checkbox"> Remember my email until next time
+                        </p>
+                        <input id="botao-login" type="submit" value="Login" name="LogIn">
+                    </form>
+			    </p>
+			    <!-- Link forgot senha/email -->
+			    <p>
+			        <a href="#" class="link-forgot">I forgot my password</a><br>
+			        <a href="#" class="link-forgot">I forgot which email address I used</a>
+			    </p>
+		    </div>
+		</div>
+	</body>
+</html>
