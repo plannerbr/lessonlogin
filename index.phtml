@@ -23,14 +23,14 @@
 
                 <!-- Formulario de login -->
 			    <p class="formulario">
-                    <form action="" method="post" title="LogIn">
-                        <b class="letra">Email</b> <input class="caixa caixa-usuario" type="text" name="user"><br>
-                        <b class="letra">Password</b> <input class="caixa caixa-senha" type="password" name="password"><br>
+                    <form action="verifica_usuario.php" method="post" title="LogIn">
+                        <b class="letra">Email</b> <input class="caixa caixa-usuario" type="text" name="usuario" id="usuario"><br>
+                        <b class="letra">Password</b> <input class="caixa caixa-senha" type="password" name="senha" id="senha"><br>
                         <!-- Inicio configuração checkbox -->
                         <p class="letra">
                             <input class="caixa-checkbox" type="checkbox"> Remember my email until next time
                         </p>
-                        <input id="botao-login" type="submit" value="Login" name="LogIn">
+                        <input id="botao-login" type="submit" value="Login" name="Submit">
                     </form>
 			    </p>
 			    <!-- Link forgot senha/email -->
