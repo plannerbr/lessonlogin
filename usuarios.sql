@@ -1,14 +1,10 @@
-CREATE TABLE usuarios(
-     usuario_id int(5) NOT NULL auto_increment,
-     nome varchar(50) NOT NULL default '',
-     sobrenome varchar(50) NOT NULL default '',
-     email varchar(100) NOT NULL default '',
-     usuario varchar(32) NOT NULL default '',
-     senha varchar(32) NOT NULL default '',
-     info text NOT NULL,
-     nivel_usuario enum('0','1','2') NOT NULL default '0',
-     data_cadastro datetime NOT NULL default '0000-00-00 00:00:00',
-     data_ultimo_login datetime NOT NULL default '0000-00-00 00:00:00',
-     ativado enum('0','1') NOT NULL default '0',
-     PRIMARY KEY  (usuario_id)
-) ENGINE = MYISAM CHARACTER SET latin1 COLLATE latin1_general_ci;
+CREATE TABLE IF NOT EXISTS `usuario` (
+  `us_id` int(11) NOT NULL AUTO_INCREMENT,
+  `us_nome` varchar(100) NOT NULL,
+  `us_email` varchar(100) NOT NULL,
+  `us_data` date NOT NULL,
+  `us_hora` time NOT NULL,
+  `us_ip` varchar(50) NOT NULL,
+  `us_senha` varchar(50) NOT NULL,
+  PRIMARY KEY (`us_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;

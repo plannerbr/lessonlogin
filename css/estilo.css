@@ -88,7 +88,7 @@ body {
 
 /* Edição das caixas de texto do formulario */
 .caixa {
-    padding: 2px;
+    padding: 4px;
     border: #646464 1px solid;
 }
 
@@ -137,4 +137,156 @@ body {
 
 .link-forgot:hover {
     text-decoration: underline;
+}
+
+.menssagem {
+    width: 500px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: -100px;
+    margin-left: 700px;
+    padding: 10px;
+    color: red;
+}
+ /* FIM EDIÇÃO INDEX */
+
+ /* INICIO EDIÇÃO HOME */
+
+#div-centro-home {
+    margin: 100px auto;
+    width: 800px;
+    height: 350px;
+    border: #646464 1px solid;
+    border-radius: 10px;
+}
+
+#div-meio-home {
+    margin: 20px;
+    margin-top: 0px;
+    width: 720px;
+    height: 270px;
+    background-color: #EFEFEF;
+    padding: 20px;
+}
+
+#log-out {
+    margin-left: 700px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+#log-out:hover {
+    text-decoration: underline;
+}
+
+
+/* INICIO EDIÇÃO ESQUECI A SENHA */
+#div-centro-pass {
+    margin: 100px auto;
+    width: 800px;
+    height: 350px;
+    border: #646464 1px solid;
+    border-radius: 10px;
+}
+
+#div-meio-pass {
+    margin: 20px;
+    width: 720px;
+    height: 270px;
+    background-color: #EFEFEF;
+    padding: 20px;
+}
+
+.forgot-pass {
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+label {
+    font-size: 16px;
+}
+
+#email {
+    width: 200px;
+    height: 20px;
+}
+
+#botao-esqueci{
+    font-weight: bolder;
+    margin-top: 10px;
+    padding: 5px;
+    width: 150px;
+    background-color: white;
+    border: black 1px solid;
+    border-radius: 5px;
+}
+
+#botao-esqueci:hover{
+    color: white;
+    background-color: black;
+}
+
+
+/* INICIO EDIÇÃO INSERIR */
+#div-centro-inserir {
+    margin: 100px auto;
+    width: 800px;
+    height: 350px;
+    border: #646464 1px solid;
+    border-radius: 10px;
+}
+
+#div-meio-inserir {
+    margin: 20px;
+    width: 720px;
+    height: 270px;
+    background-color: #EFEFEF;
+    padding: 20px;
+}
+
+.criar-conta {
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+#cadastra-nome {
+    width: 200px;
+    height: 20px;
+    margin-left: 12px;
+}
+
+#cadastra-email {
+    width: 200px;
+    height: 20px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+#cadastra-usuario {
+    width: 200px;
+    height: 20px;
+    margin-top: 5px;
+}
+
+#cadastra-senha {
+    width: 200px;
+    height: 20px;
+    margin-left: 9px;
+    margin-top: 5px;
+}
+
+#botao-cadastrar{
+    font-weight: bolder;
+    margin-top: 10px;
+    padding: 5px;
+    width: 150px;
+    background-color: white;
+    border: black 1px solid;
+    border-radius: 5px;
+}
+
+#botao-cadastrar:hover{
+    color: white;
+    background-color: black;
 }
