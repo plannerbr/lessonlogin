@@ -2,14 +2,14 @@
 session_start();
 	include("conexao/conecta.php");
 	 
-	if(isset($_REQUEST["post_back"])){
+	if(isset($_REQUEST["cadastrando"])){
 	 
 	    if(empty($_POST["nome"]) || empty($_POST["email"]) || empty($_POST["usuario"]) || empty($_POST["senha"])){
 	   
-	        echo "<script>alert(‘Preencha todos os campos antes de enviar seu cadastro!’);</script>";  
+	        echo "<p class='menssagem'>Preencha todos os campos antes de enviar seu cadastro!<p>"; 
 	   
 	    }else{
-	        $tb = $conn->prepare("insert into login(nm_login, email_login, usuario_login, senha_login) values(:nome, :email, :usuario, :senha)");
+	        $tb = $conexao->prepare("insert into login(nome, email, usuario, senha) values(:nome, :email, :usuario, :senha)");
 	        $tb->bindParam(":nome", $_POST["nome"], PDO::PARAM_STR);
 	        $tb->bindParam(":email", $_POST["email"], PDO::PARAM_STR);
 	        $tb->bindParam(":usuario", $_POST["usuario"], PDO::PARAM_STR);
@@ -17,7 +17,8 @@ session_start();
 	        $tb->execute();
 	        $tb = null;
 	       
-	        echo "Cadastro feito com sucesso.";
+	        echo "<p class='menssagem' style='color: green;'>Cadastro feito com sucesso.";
+	        header("Refresh: 2, index.phtml");
 	       
 	    }
 	 
@@ -41,8 +42,11 @@ session_start();
 					<label class="cadastra-email">Email: </label><input type="text" name="email" id="cadastra-email"><br>
 					<label class="cadastra-usuario">Usuario: </label><input type="text" name="usuario" id="cadastra-usuario"><br>
 					<label class="cadastra-senha">Senha: </label><input type="password" name="senha" id="cadastra-senha"><br>
-					<input type="submit" value="Creating Account" id="botao-cadastrar" name="cadastrar">
+					<input type="submit" value="Creating Account" id="botao-cadastrar" name="cadastrando">
 				</form>
+				<div class="div-back-login">
+					<a href="index.phtml" class="letra back-login">Back to Login</a>
+				</div>
 			</div>
 		</div>
 	</body>
