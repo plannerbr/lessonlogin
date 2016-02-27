@@ -144,7 +144,7 @@ body {
     text-align: center;
     margin-top: 100px;
     margin-bottom: -100px;
-    margin-left: 700px;
+    margin-left: 400px;
     padding: 10px;
     color: red;
 }
@@ -303,5 +303,20 @@ label {
 }
 
 .back-login:hover {
+    text-decoration: underline;
+}
+
+.div-back-login-pass {
+    margin-top: 150px;
+    position: relative;
+    float: right;
+}
+
+.back-login-pass {
+    color: black;
+    text-decoration: none;
+}
+
+.back-login:hover-pass {
     text-decoration: underline;
 }

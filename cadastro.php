@@ -6,7 +6,7 @@ session_start();
 	 
 	    if(empty($_POST["nome"]) || empty($_POST["email"]) || empty($_POST["usuario"]) || empty($_POST["senha"])){
 	   
-	        echo "<p class='menssagem'>Preencha todos os campos antes de enviar seu cadastro!<p>"; 
+	        echo "<p class='menssagem'>Complete all fields before submitting your registration!<p>"; 
 	   
 	    }else{
 	        $tb = $conexao->prepare("insert into login(nome, email, usuario, senha) values(:nome, :email, :usuario, :senha)");
@@ -17,8 +17,8 @@ session_start();
 	        $tb->execute();
 	        $tb = null;
 	       
-	        echo "<p class='menssagem' style='color: green;'>Cadastro feito com sucesso.";
-	        header("Refresh: 2, index.phtml");
+            header("Refresh: 2, index.php");
+	        echo "<p class='menssagem' style='color: green;'>Registration successfully done.";
 	       
 	    }
 	 
@@ -45,7 +45,7 @@ session_start();
 					<input type="submit" value="Creating Account" id="botao-cadastrar" name="cadastrando">
 				</form>
 				<div class="div-back-login">
-					<a href="index.phtml" class="letra back-login">Back to Login</a>
+					<a href="index.php" class="letra back-login">Back to Login</a>
 				</div>
 			</div>
 		</div>

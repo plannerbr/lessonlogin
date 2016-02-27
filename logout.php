@@ -3,5 +3,5 @@
 		session_destroy();
 		session_unset($_SESSION['usuariowil']);
 		session_unset($_SESSION['senhawil']);
-		header("Location: index.phtml");
+		header("Location: index.php");
 	}
