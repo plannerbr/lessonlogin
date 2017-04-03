@@ -86,7 +86,7 @@ session_start();
 			    <!-- Link forgot senha/email -->
 			    <p>
 			        <a href="lembrar.php" class="link-forgot">I forgot my password</a><br>
-			        <a href="#" class="link-forgot">I forgot which email address I used</a>
+			        <a href="#" class="link-forgot">I forgot which email address I used TESTE TESTE TESTE</a>
 			    </p>
 		    </div>
 		</div>
